@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
 
 :root {
@@ -29,7 +28,6 @@ body {
     cursor: none;
 }
 
-
 .cursor {
     width: 20px;
     height: 20px;
@@ -53,7 +51,6 @@ body {
     opacity: 0.3;
     transition: transform 0.3s ease;
 }
-
 
 .bg-animation {
     position: fixed;
@@ -109,7 +106,6 @@ body {
     75% { transform: translate(30px, 50px) scale(1.05); }
 }
 
-
 .particles {
     position: absolute;
     width: 100%;
@@ -131,29 +127,23 @@ body {
         transform: translateY(100vh) rotate(0deg);
         opacity: 0;
     }
-    10% {
-        opacity: 1;
-    }
-    90% {
-        opacity: 1;
-    }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
     100% {
         transform: translateY(-100vh) rotate(720deg);
         opacity: 0;
     }
 }
 
-
 .grid-pattern {
     position: absolute;
     inset: 0;
-    background-image: 
+    background-image:
         linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
     background-size: 50px 50px;
     mask-image: radial-gradient(circle at center, black 0%, transparent 70%);
 }
-
 
 .glass-nav {
     background: rgba(11, 15, 26, 0.8);
@@ -191,7 +181,6 @@ body {
     to { filter: drop-shadow(0 0 20px rgba(168, 85, 247, 0.8)); }
 }
 
-
 .gradient-text {
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     -webkit-background-clip: text;
@@ -213,7 +202,6 @@ body {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
-
 
 .hero-badge {
     animation: fade-in-up 0.8s ease forwards;
@@ -238,13 +226,22 @@ body {
     transform: translateY(30px);
 }
 
+.stats-container {
+    animation: fade-in-up 0.8s ease 0.8s forwards;
+    opacity: 0;
+}
+
+.scroll-indicator {
+    animation: fade-in-up 0.8s ease 1s forwards;
+    opacity: 0;
+}
+
 @keyframes fade-in-up {
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-
 
 .btn-glow {
     background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -289,12 +286,6 @@ body {
     transform: translateY(-2px);
 }
 
-
-.stats-container {
-    animation: fade-in-up 0.8s ease 0.8s forwards;
-    opacity: 0;
-}
-
 .stat-item {
     text-align: center;
 }
@@ -316,7 +307,6 @@ body {
     letter-spacing: 0.1em;
 }
 
-
 .scroll-indicator {
     position: absolute;
     bottom: 40px;
@@ -325,8 +315,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: fade-in-up 0.8s ease 1s forwards;
-    opacity: 0;
 }
 
 .mouse {
@@ -377,7 +365,6 @@ body {
     50% { opacity: 1; transform: rotate(45deg) translateY(5px); }
 }
 
-
 .project-card {
     background: var(--glass);
     backdrop-filter: blur(20px);
@@ -387,6 +374,7 @@ body {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transform-style: preserve-3d;
     perspective: 1000px;
+    animation: card-enter 0.6s ease forwards;
 }
 
 .project-card::before {
@@ -402,7 +390,7 @@ body {
 .project-card:hover {
     transform: translateY(-10px) rotateX(5deg);
     border-color: rgba(99, 102, 241, 0.3);
-    box-shadow: 
+    box-shadow:
         0 25px 50px -12px rgba(0, 0, 0, 0.5),
         0 0 30px rgba(99, 102, 241, 0.2);
 }
@@ -572,7 +560,6 @@ body {
     box-shadow: 0 5px 20px rgba(99, 102, 241, 0.3);
 }
 
-
 .glass-card-3d {
     background: var(--glass);
     backdrop-filter: blur(20px);
@@ -612,7 +599,6 @@ body {
     line-height: 1.8;
 }
 
-
 .social-btn {
     display: flex;
     align-items: center;
@@ -642,7 +628,6 @@ body {
 .social-btn i {
     font-size: 1.25rem;
 }
-
 
 .toast {
     position: fixed;
@@ -675,7 +660,6 @@ body {
     font-size: 1.25rem;
 }
 
-
 .footer-link {
     width: 40px;
     height: 40px;
@@ -693,7 +677,6 @@ body {
     color: white;
     transform: translateY(-3px);
 }
-
 
 .back-to-top {
     position: fixed;
@@ -728,7 +711,6 @@ body {
     box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
 }
 
-
 .reveal {
     opacity: 0;
     transform: translateY(50px);
@@ -740,33 +722,58 @@ body {
     transform: translateY(0);
 }
 
+.thanks-section {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.thanks-card {
+    display: inline-block;
+    padding: 1.5rem 2.5rem;
+    background: var(--glass);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(6, 182, 212, 0.2);
+    border-radius: 1rem;
+    color: #9ca3af;
+    font-size: 1.125rem;
+}
+
+.thanks-card a {
+    color: #06b6d4;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.thanks-card a:hover {
+    color: #ffffff;
+}
 
 @media (max-width: 768px) {
     body {
         cursor: auto;
     }
-    
+
     .cursor, .cursor-follower {
         display: none;
     }
-    
+
     .hero-title {
         font-size: 3rem;
     }
-    
+
     .stat-number {
         font-size: 2rem;
     }
-    
+
     .glass-nav {
         padding: 0.75rem 1rem;
     }
-    
+
     .nav-link {
         font-size: 0.875rem;
     }
 }
-
 
 @keyframes card-enter {
     from {
@@ -778,11 +785,6 @@ body {
         transform: translateY(0) scale(1);
     }
 }
-
-.project-card {
-    animation: card-enter 0.6s ease forwards;
-}
-
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -800,7 +802,6 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(180deg, var(--secondary), var(--accent));
 }
-
 
 ::selection {
     background: rgba(99, 102, 241, 0.3);
