@@ -1,5 +1,14 @@
 const projects = [
     {
+        t: "CodeAtlas",
+        d: "Інтерактивний атлас коду — навігація по проектах, технологіях та ресурсах для розробників.",
+        u: "CodeAtlas",
+        i: "fa-atlas",
+        c: "cyan",
+        tags: ["app", "tool", "code"],
+        category: "app"
+    },
+    {
         t: "Dead Rails Wiki",
         d: "Енциклопедія для гри Dead Rails з повним описом персонажів, локацій та стратегій.",
         u: "Dead-Rails-wiki",
