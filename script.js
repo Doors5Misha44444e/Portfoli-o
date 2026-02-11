@@ -11,7 +11,7 @@ const projects = [
     {
         t: "Dead Rails Wiki",
         d: "Енциклопедія для гри Dead Rails з повним описом персонажів, локацій та стратегій.",
-        u: "Dead-Rails-wiki",
+        u: "DeadRails-Wiki",
         i: "fa-book-dead",
         c: "indigo",
         tags: ["wiki", "gaming", "guide"],
