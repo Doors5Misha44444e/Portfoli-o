@@ -53,16 +53,15 @@ const projects = [
         tags: ["game", "meme"],
         category: "game"
     },
-   {
-    t: "Wishlist",
-    d: "Менеджер списку бажань з можливістю поділитися з друзями.",
-    u: "https://doors5misha44444e.github.io/wishlis-t/",
-    g: "https://github.com/Doors5Misha44444e/wishlis-t.git",
-    i: "fa-heart",
-    c: "pink",
-    tags: ["app", "social"],
-    category: "app"
-},
+    {
+        t: "Wishlist",
+        d: "Менеджер списку бажань з можливістю поділитися з друзями.",
+        u: "Wishlist",
+        i: "fa-heart",
+        c: "pink",
+        tags: ["app", "social"],
+        category: "app"
+    },
     {
         t: "API Перекладач",
         d: "Інструмент перекладу через API з підтримкою багатьох мов.",
