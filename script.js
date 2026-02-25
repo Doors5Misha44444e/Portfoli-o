@@ -97,7 +97,17 @@ const projects = [
         c: "amber",
         tags: ["wiki", "gaming", "horror"],
         category: "wiki"
-    }
+    }, 
+      {
+        t: "Ukraine Project",
+        d: "Патріотичний проєкт про Україну з інформацією про культуру, історію та традиції.",
+        u: "ukraine-project",
+        i: "fa-flag",
+        c: "blue",
+        tags: ["app", "culture", "ukraine"],
+        category: "app"
+    },
+    
 ];
 
 const cursor = document.querySelector('.cursor');
