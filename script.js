@@ -107,6 +107,15 @@ const projects = [
         tags: ["app", "culture", "ukraine"],
         category: "app"
     },
+        {
+        t: "Decoding the Text",
+        d: "Інструмент для декодування та аналізу текстових даних з різними методами шифрування.",
+        u: "Decoding-the-text",
+        i: "fa-lock",
+        c: "indigo",
+        tags: ["tool", "crypto", "decoder"],
+        category: "tool"
+    },
     
 ];
 
