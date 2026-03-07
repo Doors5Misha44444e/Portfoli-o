@@ -116,18 +116,7 @@ const projects = [
         tags: ["tool", "crypto", "decoder"],
         category: "tool"
     },
-        {
-        t: "Squid",
-        d: "Інтерактивний проєкт Squid — веб-додаток з унікальним дизайном та функціоналом.",
-        u: "Squid",
-        i: "fa-gamepad",
-        c: "red",
-        tags: ["game", "app", "interactive"],
-        category: "game",
-        customLive: "https://fllavex.github.io/Squid/",
-        customRepo: "https://github.com/Fllavex/Squid",
-        customVSCode: "https://github.dev/Fllavex/Squid"
-    }
+   
     
 ];
 
